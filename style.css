@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+:root{ 
+--var--Red: hsl(1, 90%, 64%);
+--var--Blue: hsl(219, 85%, 26%);
+--var--White: hsl(0, 0%, 100%);
+--var--Very-light-grayish-blue: hsl(210, 60%, 98%);
+--var--Light-grayish-blue-1: hsl(211, 68%, 94%);
+--var--Light-grayish-blue-2: hsl(205, 33%, 90%);
+--var--Grayish-blue: hsl(219, 14%, 63%);
+--var--Dark-grayish-blue: hsl(219, 12%, 42%);
+--var--Very-dark-blue: hsl(224, 21%, 14%);
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--var--Very-light-grayish-blue);
+    margin: 0;
+font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.parent{
+    width: 59%;
+    max-width: 100%;
+    height: 120vh;
+    max-height: 200%;
+    display: grid;
+    margin:5rem auto;
+}
+
+.children{
+    gap: 1rem;
+margin: auto;
+display: grid;
+align-items: center;
+justify-content: center;
+padding: 2rem;
+width: 100%;
+}
+
+.flex-group{
+    display: flex;
+    white-space: nowrap;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.no{
+    background-color: var(--var--Blue);
+    color: var(--var--White);
+    width: 2.5rem;
+    padding: 0.2rem;
+    height: 4vh;
+    display: grid;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 26rem;
+    border-radius: 0.5rem;
+}
+
+p{
+    color: var(--var--Dark-grayish-blue);
+padding: 0.1rem -2rem;
+align-items: center;
+display: flex;
+font-size: 1rem;
+justify-content: center;
+margin-top: -1rem;
+}
+.P-text{
+    color: var(--var--Grayish-blue);
+    font-weight: 800;
+    display: flex;
+        padding: 0.1rem 0.5rem;
+}
+
+
+.child-1, .child-2 , .child-3,  .child-4,  .child-5,  .child-6,  .child-7, .child-0{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    text-align: center;
+    align-items: center;
+}
+
+.chess-img{
+    justify-content: space-between;
+    display: grid;
+    position:absolute;
+    margin-left: 39rem;
+}
+h2{
+    font-size: 1.1rem;
+    white-space: nowrap;
+    align-items: center;
+    gap: 1rem;
+    margin-top: -2rem;
+    margin-bottom: -1rem;
+}
+.min{
+    display: grid;
+position: relative;
+margin-left: 3.5rem;
+color: var(--var--Dark-grayish-blue);
+}
+
+.J-text{
+    color: var(--var--Blue);
+    font-weight: 800;
+    padding: 0.1rem 0.5rem;
+}
+
+.fulstop{
+    color: var(--var--Red);
+    font-size: 1rem;
+    border-radius:50% ;
+}
+
+.reply{
+    padding: 0.9rem;
+    font-weight: 600;
+    margin-left: 3.5rem;
+    border: 1px solid#b4b2b2;
+    margin-bottom: 2rem;
+}
+.answer{
+    font-size: 1.2rem;
+}
+img{
+    width: 5%;
+
+}
+
+.time{
+    margin-top: -3.7rem;
+    align-items: center;
+    white-space: wrap;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    margin-left: 3.5rem;
+ margin-right: 2rem;
+ color: var(--var--Dark-grayish-blue);
+}
+.child{
+
+    align-items: center;
+    gap: 3rem;
+}
+.min{
+    position: absolute;
+    margin-top: -2rem;
+}
+.child{
+ 
+    background-color: var(--var--Light-grayish-blue-1);
+}
+.lower-text{
+
+white-space: normal;
+text-align: left;
+margin-right: 15rem;
+margin-left: -0.5em;
+font-size: 1.1rem;
+align-items: center;
+justify-content: center;
+margin-top: 1.6rem;
+}
+@media screen and (max-width: 600px) {
+
+.children{
+margin: auto;
+grid-template-columns: repeat(1,1fr);
+display: grid;
+align-items: center;
+  gap: 1rem;
+flex-direction: column;
+justify-content: center;
+padding: 2rem;
+width: 50%;
+}
+.lower-text{
+    margin-top:1.5rem;
+    width: 70%;
+    margin-left: 0.2rem;
+    margin-right: 10rem;
+}
+.parent{
+    margin-right:13rem ;
+    display: grid;
+    
+}
+.flex-group{
+justify-content: center;
+    padding: 1rem;
+    margin-top: -8rem;
+    width: 100%;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+.left-text{
+position: absolute;
+margin-top: 0.1rem;
+}
+.reply{
+    width: 48%;
+    max-width: 100%;
+}
+.child{
+ 
+    background-color: var(--var--Light-grayish-blue-1);
+}
+.P-text{
+    margin-top: 2.5rem;
+    text-align: left;
+    position: absolute;
+    margin-left: 1rem;
+}
+.min{
+    position: absolute;
+    margin-top: -2rem;
+}
+.chess-img{
+display: block;
+max-width: 100%;
+    margin-left: 26rem;
+    margin-top: -0.5rem;
+}
+.time{
+    margin-top: -3.7rem;
+    align-items: center;
+    white-space: wrap;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    margin-left: 3.5rem;
+ margin-right: 2rem;
+ color: var(--var--Dark-grayish-blue);
+}
+}
